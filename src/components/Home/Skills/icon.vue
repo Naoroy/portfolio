@@ -1,8 +1,9 @@
 <template lang="html">
   <div id="skill-icon">
-    <img class="icon" :src="url || '#'" :alt="name">
+    <img class="icon" :src="url || '#'" :alt="name+' icon'">
+    <h3>{{ name }}</h3>
     <div class="bar">
-      <div class="progression"></div>
+      <div class="progression" :style="progressBarwidth"></div>
     </div>
   </div>
 </template>
@@ -14,6 +15,14 @@ export default {
     'url': String,
     'progression': Number,
   },
+  data: () => ({
+
+  }),
+  computed: {
+    progressBarwidth() {
+      return `width: ${ this.progression }%`
+    }
+  }
 }
 </script>
 
@@ -21,20 +30,21 @@ export default {
   #skill-icon {
     width: 100px;
     height: 100px;
-    background: #F55;
+
     .icon {
-      width: 80%;
+      width: 50%;
       font-weight: 900;
     }
     .bar {
       background: #D99;
       height: 1em;
       width: 100%;
-      border: solid 1px black;
+      border: solid 1px #555;
       .progression {
-        background: #A33;
+        background: #D55;
+        border-right: solid 1px #555;
         height: 100%;
-        width: 80%;
+        // width: 80%;
       }
     }
   }

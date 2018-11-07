@@ -14,44 +14,14 @@
 
 <script>
 import icon from './icon.vue'
+import skillset from './skillset.json'
 
 export default {
   components: {
     icon,
   },
   data:() => ({
-    icons: [
-      {
-        name:'JS',
-        url: 'https://i2.wp.com/redstart.fr/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1',
-        progression: 100,
-      },
-      {
-        name:'JS',
-        url: '',
-        progression: 100,
-      },
-      {
-        name:'JS',
-        url: '',
-        progression: 100,
-      },
-      {
-        name:'JS',
-        url: '',
-        progression: 100,
-      },
-      {
-        name:'JS',
-        url: '',
-        progression: 100,
-      },
-      {
-        name:'JS',
-        url: '',
-        progression: 100,
-      },
-    ]
+    icons: skillset
   })
 }
 </script>

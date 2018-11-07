@@ -1,0 +1,47 @@
+[
+  {
+    "name": "HTML",
+    "url": "./src/components/Home/assets/images/html.svg",
+    "progression": 90
+  },
+  {
+    "name": "CSS",
+    "url": "./src/components/Home/assets/images/css.svg",
+    "progression": 80
+  },
+  {
+    "name": "Javascript",
+    "url": "./src/components/Home/assets/images/javascript.svg",
+    "progression": 80
+  },
+  {
+    "name": "NodeJS",
+    "url": "./src/components/Home/assets/images/nodejs.svg",
+    "progression": 80
+  },
+  {
+    "name": "PHP",
+    "url": "./src/components/Home/assets/images/php.svg",
+    "progression": 80
+  },
+  {
+    "name": "Python",
+    "url": "./src/components/Home/assets/images/python.svg",
+    "progression": 80
+  },
+  {
+    "name": "Wordpress",
+    "url": "./src/components/Home/assets/images/wordpress.svg",
+    "progression": 80
+  },
+  {
+    "name": "VueJs",
+    "url": "./src/components/Home/assets/images/vuejs.svg",
+    "progression": 80
+  },
+  {
+    "name": "Sass",
+    "url": "./src/components/Home/assets/images/Sass.svg",
+    "progression": 80
+  }
+]

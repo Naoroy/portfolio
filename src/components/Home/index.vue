@@ -1,8 +1,8 @@
 <template lang="html">
   <div id="home">
     <h1> Home </h1>
-    <resume/>
     <skills/>
+    <resume/>
   </div>
 </template>
 
