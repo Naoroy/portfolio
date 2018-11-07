@@ -1,24 +1,31 @@
 <template>
   <div id="app">
-    <h1> hmmmm </h1>
-    <router-link to="/"> Home </router-link>
-    <router-link to="/projects"> Projects </router-link>
-    <router-view></router-view>
+    <navigation/>
+    <h1> Développeur web fullstack JavaScript </h1>
+    <router-view/>
   </div>
 </template>
 
 <script>
+import navigation from './components/Navigation/index.vue'
+
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  components: {
+    navigation
+  },
+  data: () => ({
+
+  })
 }
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
