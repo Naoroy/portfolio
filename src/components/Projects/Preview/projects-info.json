@@ -1,0 +1,86 @@
+[
+  {
+    "name": "project1",
+    "thumbnail": "./src/components/Projects/assets/images/javascript.svg",
+    "url": "",
+    "github": "",
+    "description": "",
+    "tags": [
+      "JS",
+      "VueJS",
+      "NodeJS",
+      "MySQL",
+      "CSS"
+    ]
+  },
+  {
+    "name": "project2",
+    "thumbnail": "",
+    "url": "",
+    "github": "",
+    "description": "",
+    "tags": [
+      "JS",
+      "VueJS",
+      "NodeJS",
+      "MySQL",
+      "CSS"
+    ]
+  },
+  {
+    "name": "project3",
+    "thumbnail": "",
+    "url": "",
+    "github": "",
+    "description": "  ",
+    "tags": [
+      "JS",
+      "VueJS",
+      "NodeJS",
+      "MySQL",
+      "CSS"
+    ]
+  },
+  {
+    "name": "project4",
+    "thumbnail": "",
+    "url": "",
+    "github": "",
+    "description": "",
+    "tags": [
+      "JS",
+      "VueJS",
+      "NodeJS",
+      "MySQL",
+      "CSS"
+    ]
+  },
+  {
+    "name": "project5",
+    "thumbnail": "",
+    "url": "",
+    "github": "",
+    "description": "",
+    "tags": [
+      "JS",
+      "VueJS",
+      "NodeJS",
+      "MySQL",
+      "CSS"
+    ]
+  },
+  {
+    "name": "project6",
+    "thumbnail": "",
+    "url": "",
+    "github": "",
+    "description": "  ",
+    "tags": [
+      "JS",
+      "VueJS",
+      "NodeJS",
+      "MySQL",
+      "CSS"
+    ]
+  }
+]

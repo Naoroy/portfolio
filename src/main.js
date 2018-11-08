@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import Home from './components/Home/index'
-import Projects from './components/Projects/Projects'
+import Projects from './components/Projects/index'
 
 const router = new VueRouter({
   mode: 'history',
