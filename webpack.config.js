@@ -71,7 +71,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'global-variables': path.resolve(__dirname, './src/scss/settings.scss')
+      // relative to the location of the webpack config file!
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
