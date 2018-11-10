@@ -1,14 +1,15 @@
 <template lang="html">
   <div id="preview"
+    @click="openProjectUrl"
     @mouseenter="toggleDescription($event)"
-    @mouseleave="toggleDescription($event)">
-    {{ showDescription }}
+    @mouseleave="toggleDescription($event)"
+  >
     <h3 class="title">
       {{ project.name }}
     </h3>
     <img
       class="thumbnail"
-      :src="project.thumbnail"
+      :src="project.thumbnail || fallbackSrc"
       alt="project thumbnail"
     >
     <div class="container hidden">
@@ -29,28 +30,31 @@ export default {
     project: Object
   },
   data: () => ({
-    showDescription: false
+    showDescription: false,
+    fallbackSrc: './src/components/assets/images/browser.svg'
   }),
   methods: {
+    openProjectUrl() {
+      window.open(this.project.url, '_blank')
+    },
     toggleDescription(event) {
       const currentPreview = event.target
       const description = currentPreview.querySelector('.container')
-      // console.log(description)
+
       description.classList.toggle('active')
       description.classList.toggle('hidden')
+      // currentPreview.classList.toggle('fade')
     }
   }
 }
 </script>
 
 <style lang="scss">
-
 #preview {
-  // border: 1px solid red;
+  box-shadow: 5px 7px 16px 0px;
   position: relative;
   height: 300px;
   overflow: hidden;
-
   .container.active {
     position: absolute;
     color: beige;
@@ -58,27 +62,26 @@ export default {
     transition: 300ms;
     bottom: 0;
   }
-
   .container.hidden {
     position: absolute;
     transition: 1500ms;
     bottom: -100%;
   }
-}
-.container--small-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: .2em;
-  margin: auto;
-  width: 100%;
-  // border: 1px solid blue;
   .thumbnail {
-    height: 100%;
+    width: 90%;
+    height: 80%;
   }
-  .tag {
-    background: #2B4;
-    width: 100%;
+  .container--small-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .2em;
     margin: auto;
+    width: 100%;
+    .tag {
+      background: #2B4;
+      width: 100%;
+      margin: auto;
+    }
   }
 }
 

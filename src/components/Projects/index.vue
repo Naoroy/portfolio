@@ -2,12 +2,11 @@
   <div id="projects">
     <h1> Projects </h1>
     <div class="container--large-grid">
-
-    <Preview
-      :key="project.name"
-      v-for="project in projects"
-      :project="project"
-    />
+      <Preview
+        :key="project.name"
+        v-for="project in projects"
+        :project="project"
+      />
     </div>
   </div>
 </template>
@@ -22,6 +21,9 @@ export default {
   }),
   components: {
     Preview
+  },
+  methods: {
+    
   }
 }
 </script>
@@ -30,8 +32,9 @@ export default {
 .container--large-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
+  grid-gap: 3em;
   margin: auto;
+  padding: 10vh;
   // background: #D55;
 }
 </style>

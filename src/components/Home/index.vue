@@ -1,8 +1,8 @@
 <template lang="html">
   <div id="home">
-    <h1> Home </h1>
-    <skills/>
+    <h1> Développeur web fullstack JavaScript </h1>
     <resume/>
+    <skills/>
   </div>
 </template>
 
@@ -20,8 +20,6 @@ export default {
 
 <style lang="scss">
 #home {
-  #resume, #skills {
-    border: solid red 1px
-  }
+
 }
 </style>

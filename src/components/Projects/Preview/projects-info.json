@@ -1,9 +1,9 @@
 [
   {
-    "name": "project1",
-    "thumbnail": "./src/components/Projects/assets/images/javascript.svg",
-    "url": "",
-    "github": "",
+    "name": "Catmash",
+    "thumbnail": "",
+    "url": "https://fathomless-waters-16855.herokuapp.com/",
+    "github": "https://github.com/Naoroy/catmash",
     "description": "",
     "tags": [
       "JS",

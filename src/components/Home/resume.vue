@@ -10,23 +10,27 @@
 <script>
 export default {
   data:() => ({
-    resume: './src/components/Home/assets/resume.pdf'
+    resume: './src/components/assets/resume.pdf'
   })
 }
 </script>
 
 <style lang="scss">
-.container--flex-column {
-  display: flex;
-  flex-direction: column;
+#resume {
+  border: solid red 1px;
 
-  .pdf {
-    height: 100vh;
-    width: 60vw;
-  }
+  .container--flex-column {
+    display: flex;
+    flex-direction: column;
 
-  .box--center {
-    margin: auto;
+    .pdf {
+      height: 100vh;
+      width: 60vw;
+    }
+
+    .box--center {
+      margin: auto;
+    }
   }
 }
 </style>
