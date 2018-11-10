@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation/>
-    <router-view class="view"/>
+    <router-view :class="$mq === 'desktop' ? 'desktop' : 'mobile'"/>
   </div>
 </template>
 
@@ -29,10 +29,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  // background: $blue;
-}
-.view {
-  margin: 10vh 0 0 $navWidth;
+  
+  .desktop {
+    margin: 10vh 0 0 $navWidth;
+  }
+  .mobile {
+    margin: 10vh 0 0 0;
+  }
 }
 h1, h2 {
   font-weight: normal;
