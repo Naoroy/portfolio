@@ -1,10 +1,10 @@
 <template lang="html">
   <div id="skill-icon">
-    <img class="icon" :src="url || '#'" :alt="name+' icon'">
-    <h3>{{ name }}</h3>
-    <div class="bar">
+    <!-- <h3>{{ name }}</h3> -->
+    <img class="icon" :src="url || '#'" :alt="name + ' logo'">
+    <!-- <div class="bar">
       <div class="progression" :style="progressBarwidth"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -28,14 +28,20 @@ export default {
 
 <style lang="scss">
   #skill-icon {
-    width: 100px;
-    height: 100px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+    height: 10em;
+    position: relative;
     .icon {
       width: 50%;
       font-weight: 900;
     }
     .bar {
+      position: absolute;
+      bottom: 0;
       background: #D99;
       height: 1em;
       width: 100%;
@@ -44,7 +50,6 @@ export default {
         background: #D55;
         border-right: solid 1px #555;
         height: 100%;
-        // width: 80%;
       }
     }
   }

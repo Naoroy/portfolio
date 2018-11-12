@@ -20,14 +20,9 @@
     "progression": 80
   },
   {
-    "name": "PHP",
-    "url": "./src/components/assets/images/php.svg",
-    "progression": 80
-  },
-  {
-    "name": "Python",
-    "url": "./src/components/assets/images/python.svg",
-    "progression": 80
+    "name": "MySQL",
+    "url": "./src/components/assets/images/mysql.svg",
+    "progression": 50
   },
   {
     "name": "Wordpress",

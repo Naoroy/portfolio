@@ -1,8 +1,11 @@
 <template lang="html">
-  <div id ="resume">
+  <div id ="skills">
     <h2 class="title"> My skills </h2>
-    <div class="container--grid">
-      <icon v-for="icon in icons"
+    <div class="container--grid box--center">
+      <description/>
+    </div>
+    <div class="container--grid box--center">
+      <icon class="flex" v-for="icon in icons"
         :key="icon.name"
         :name="icon.name"
         :url="icon.url"
@@ -14,11 +17,13 @@
 
 <script>
 import icon from './icon.vue'
+import description from './description.vue'
 import skillset from './skillset.json'
 
 export default {
   components: {
     icon,
+    description,
   },
   data:() => ({
     icons: skillset
@@ -28,10 +33,14 @@ export default {
 
 <style lang="scss">
 .container--grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  margin: 10vh auto;
-  width: 65vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 100px;
+  // margin: 0 auto;
+  // width: 65vw;
+  justify-content: center;
+  #skill-icon {
+    margin: 1em;
+  }
 }
 </style>

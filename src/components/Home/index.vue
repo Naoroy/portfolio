@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="home">
-    <h1> Développeur web fullstack JavaScript </h1>
     <resume/>
+
     <skills/>
   </div>
 </template>
@@ -19,7 +19,18 @@ export default {
 </script>
 
 <style lang="scss">
-#home {
+.description {
+  display:flex;
+  flex-wrap: wrap;
+  div {
+    background: #FFF;
+    color: #333;
+    margin: 1em auto;
+    width: 50%;
 
+    min-width: 300px;
+    // box-shadow: 3px 6px 14px #333;
+    padding: 2em;
+  }
 }
 </style>
