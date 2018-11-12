@@ -1,7 +1,11 @@
 <template lang="html">
   <nav id="navigation">
     <button class="btn-toggle" v-show="$mq === 'mobile'" @click="toggleNav">III</button>
-    <div class="container">
+    <div
+      :class="'container ' + (
+        $mq === 'mobile' ? 'large closed' : ''
+      )"
+    >
       <div class="container--flex" @click="toggleNav">
         <router-link class="btn" to="/" exact>
           Home
@@ -47,19 +51,19 @@ export default {
       container.classList.toggle('closed')
     }
   },
-  watch: {
-    $mq: (value) => {
-      const container = document.querySelector('.container')
-      if (value==='mobile') {
-        container.classList.add('closed')
-        container.classList.add('large')
-      }
-      else {
-        container.classList.remove('closed')
-        container.classList.remove('large')
-      }
-    }
-  }
+  // watch: {
+  //   $mq: (value) => {
+  //     const container = document.querySelector('.container')
+  //     if (value==='mobile') {
+  //       container.classList.add('closed')
+  //       container.classList.add('large')
+  //     }
+  //     else {
+  //       container.classList.remove('closed')
+  //       container.classList.remove('large')
+  //     }
+  //   }
+  // }
 }
 </script>
 
@@ -71,8 +75,8 @@ nav {
     z-index: 2;
     width: 5em;
     height: 5em;
-    top: 2vw;
-    left: 2vw;
+    top: 0.3em;
+    left: 0.3em;
   }
   .container.closed {
     transform: translateX(-100%);
